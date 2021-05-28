@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-// const connection = require('connection');
+const connection = require('./config/mysqlconnection');
 require('dotenv').config();
 
 inquirer

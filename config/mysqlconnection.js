@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-// require('dotenv').config(); 
+require('dotenv').config();
 console.log(`USER: ${process.env.DB_USER}`)
 console.log(`HOST: ${process.env.DB_HOST}`)
 console.log(`PASSWORD: ${process.env.DB_PASS}`)

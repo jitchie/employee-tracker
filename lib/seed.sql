@@ -1,5 +1,3 @@
-DROP DATABASE IF EXISTS etrack_db;
-CREATE DATABASE etrack_db;
 USE etrack_db;
 INSERT INTO department (department_name, budget)
 VALUES ('production', 1000000),

@@ -1,4 +1,6 @@
-DROP TABLE IF EX USE etrack_db;
+DROP DATABASE IF EXISTS etrack_db;
+CREATE DATABASE etrack_db;
+USE etrack_db;
 CREATE TABLE department(
     id INT AUTO_INCREMENT NOT NULL,
     deparment_name VARCHAR(30),
