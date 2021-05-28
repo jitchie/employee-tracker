@@ -1,4 +1,7 @@
-INSERT INTO department (name, budget)
+DROP DATABASE IF EXISTS etrack_db;
+CREATE DATABASE etrack_db;
+USE etrack_db;
+INSERT INTO department (department_name, budget)
 VALUES ('production', 1000000);
 ('marketing', 750000);
 ('accounting', 500000);
@@ -20,7 +23,8 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ('john', 'doe', 22, NULL);
 ('jack', 'ritchie', 60, 22);
 ('dan', 'darefoote', 33, null);
-('will', 'chapman', 70, 33) ('chris', 'theo', 44, null);
+('will', 'chapman', 70, 33);
+('chris', 'theo', 44, null);
 ('nick', 'theo', 80, 44);
 ('sam', 'orielly', 90, null);
 ('adam', 'smith', 100, null);

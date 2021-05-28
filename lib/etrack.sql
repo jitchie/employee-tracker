@@ -1,23 +1,19 @@
 DROP DATABASE IF EXISTS etrack_db;
 CREATE DATABASE etrack_db;
-
 USE etrack_db;
-
 CREATE TABLE department(
     id INT AUTO_INCREMENT NOT NULL,
-    name VARCHAR(30),
+    deparment_name VARCHAR(30),
     budget INT,
     PRIMARY KEY(id)
 );
-
-CREATE TABLE employeeRole(
+CREATE TABLE employeerole(
     id INT AUTO_INCREMENT NOT NULL,
     title VARCHAR(30) NOT NULL,
-    salary DECIMAL (10,2) NOT NULL,
-    department_id INT,npm install sql
+    salary INT NOT NULL,
+    department_id INT,
     PRIMARY KEY(id)
-); 
-
+);
 CREATE TABLE employee(
     id INT AUTO_INCREMENT NOT NULL,
     first_name VARCHAR(30) NOT NULL,
