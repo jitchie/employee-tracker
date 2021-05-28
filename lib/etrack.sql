@@ -3,7 +3,7 @@ CREATE DATABASE etrack_db;
 USE etrack_db;
 CREATE TABLE department(
     id INT AUTO_INCREMENT NOT NULL,
-    deparment_name VARCHAR(30),
+    name VARCHAR(30),
     budget INT,
     PRIMARY KEY(id)
 );

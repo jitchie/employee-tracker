@@ -1,5 +1,5 @@
 USE etrack_db;
-INSERT INTO department (department_name, budget)
+INSERT INTO department (name, budget)
 VALUES ('production', 1000000),
     ('marketing', 750000),
     ('accounting', 500000),
