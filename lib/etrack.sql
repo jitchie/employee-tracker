@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS etrack_db;
-CREATE DATABASE etrack_db;
-USE etrack_db;
+DROP TABLE IF EX USE etrack_db;
 CREATE TABLE department(
     id INT AUTO_INCREMENT NOT NULL,
     deparment_name VARCHAR(30),
@@ -10,7 +8,7 @@ CREATE TABLE department(
 CREATE TABLE employeerole(
     id INT AUTO_INCREMENT NOT NULL,
     title VARCHAR(30) NOT NULL,
-    salary INT NOT NULL,
+    salary INT(10) NOT NULL,
     department_id INT,
     PRIMARY KEY(id)
 );

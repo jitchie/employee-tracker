@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-require('dotenv').config(); 
+// require('dotenv').config(); 
 console.log(`USER: ${process.env.DB_USER}`)
 console.log(`HOST: ${process.env.DB_HOST}`)
 console.log(`PASSWORD: ${process.env.DB_PASS}`)
@@ -20,6 +20,6 @@ connection.connect((err)=>{
     console.log(`connected as ${connection.threadId}`)
 });
 
-connection.end();
-
-module.exports = mysqlconnection
+// connection.end()
+;
+module.exports = connection
