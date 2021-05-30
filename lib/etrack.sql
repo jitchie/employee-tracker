@@ -4,7 +4,6 @@ USE etrack_db;
 CREATE TABLE department(
     id INT AUTO_INCREMENT NOT NULL,
     name VARCHAR(30),
-    budget INT,
     PRIMARY KEY(id)
 );
 CREATE TABLE employeerole(
