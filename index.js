@@ -3,9 +3,22 @@ const connection = require('./config/mysqlconnection');
 require('dotenv').config();
 
 
-function appMenu(){
+async function appMenu(){
 inquirer
 .prompt([
+  {
+    type: "input",
+    name: "choice",
+    message: "what would you like to do?",
+    choice: [
+    'View Departments',
+    'View Roles',
+    'View Employees',
+    'Add Department',
+    'Add Role',
+    'Add Employee',
+    'Update Employee Role']
+  },
 
 ])
 .then((answers) => {
@@ -20,3 +33,4 @@ inquirer
 });
 }
 appMenu();
+//collecting 
