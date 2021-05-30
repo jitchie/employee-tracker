@@ -2,9 +2,11 @@ const inquirer = require('inquirer');
 const connection = require('./config/mysqlconnection');
 require('dotenv').config();
 
+
+function appMenu(){
 inquirer
 .prompt([
-    /* Pass your questions in here */
+
 ])
 .then((answers) => {
 // Use user feedback for... whatever!!
@@ -16,3 +18,5 @@ inquirer
       // Something else went wrong
     }
 });
+}
+appMenu();

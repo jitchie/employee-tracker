@@ -1,12 +1,9 @@
-USE etrack_db;
-INSERT INTO department (name, budget)
-VALUES ('production', 1000000),
-    ('marketing', 750000),
-    ('accounting', 500000),
-    ('human resource managment', 635000),
-    ('procurement', 800000),
-    ('legal', 1000000);
-INSERT INTO employeerole (title, salary, department_id)
+INSERT INTO department (name)
+VALUES ('Sales'),
+    ('Engineering'),
+    ('Finance'),
+    ('Legal');
+INSERT INTO roles (title, salary, department_id)
 VALUES ('operational managment', 120000, 1),
     ('operations clerk', 60000, 1),
     ('marketing manager', 100000, 2),

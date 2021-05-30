@@ -105,3 +105,7 @@ dist
 
 # Passwords and log
 .env
+
+.vscode
+
+setting.json

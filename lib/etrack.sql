@@ -6,7 +6,7 @@ CREATE TABLE department(
     name VARCHAR(30),
     PRIMARY KEY(id)
 );
-CREATE TABLE employeerole(
+CREATE TABLE roles(
     id INT AUTO_INCREMENT NOT NULL,
     title VARCHAR(30) NOT NULL,
     salary INT(10) NOT NULL,
